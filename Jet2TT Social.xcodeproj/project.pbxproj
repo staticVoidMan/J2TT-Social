@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DDF24CC27C500C25348 /* AppDelegate.swift */; };
+		90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DE124CC27C500C25348 /* SceneDelegate.swift */; };
+		90668DE424CC27C500C25348 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DE324CC27C500C25348 /* ContentView.swift */; };
+		90668DE624CC27C600C25348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE524CC27C600C25348 /* Assets.xcassets */; };
+		90668DE924CC27C600C25348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE824CC27C600C25348 /* Preview Assets.xcassets */; };
+		90668DEC24CC27C600C25348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */; };
+		90668DF724CC27C600C25348 /* Jet2TT_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90668DF324CC27C600C25348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90668DD424CC27C400C25348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90668DDB24CC27C400C25348;
+			remoteInfo = "Jet2TT Social";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90668DDC24CC27C500C25348 /* Jet2TT Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jet2TT Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90668DDF24CC27C500C25348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90668DE124CC27C500C25348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		90668DE324CC27C500C25348 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90668DE524CC27C600C25348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90668DE824CC27C600C25348 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90668DEB24CC27C600C25348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90668DED24CC27C600C25348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90668DF224CC27C600C25348 /* Jet2TT SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jet2TT SocialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TT_SocialTests.swift; sourceTree = "<group>"; };
+		90668DF824CC27C600C25348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90668DD924CC27C400C25348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90668DEF24CC27C600C25348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90668DD324CC27C400C25348 = {
+			isa = PBXGroup;
+			children = (
+				90668DDE24CC27C500C25348 /* Jet2TT Social */,
+				90668DF524CC27C600C25348 /* Jet2TT SocialTests */,
+				90668DDD24CC27C500C25348 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90668DDD24CC27C500C25348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90668DDC24CC27C500C25348 /* Jet2TT Social.app */,
+				90668DF224CC27C600C25348 /* Jet2TT SocialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90668DDE24CC27C500C25348 /* Jet2TT Social */ = {
+			isa = PBXGroup;
+			children = (
+				90668DDF24CC27C500C25348 /* AppDelegate.swift */,
+				90668DE124CC27C500C25348 /* SceneDelegate.swift */,
+				90668DE324CC27C500C25348 /* ContentView.swift */,
+				90668DE524CC27C600C25348 /* Assets.xcassets */,
+				90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */,
+				90668DED24CC27C600C25348 /* Info.plist */,
+				90668DE724CC27C600C25348 /* Preview Content */,
+			);
+			path = "Jet2TT Social";
+			sourceTree = "<group>";
+		};
+		90668DE724CC27C600C25348 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				90668DE824CC27C600C25348 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90668DF524CC27C600C25348 /* Jet2TT SocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */,
+				90668DF824CC27C600C25348 /* Info.plist */,
+			);
+			path = "Jet2TT SocialTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90668DDB24CC27C400C25348 /* Jet2TT Social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90668DFB24CC27C600C25348 /* Build configuration list for PBXNativeTarget "Jet2TT Social" */;
+			buildPhases = (
+				90668DD824CC27C400C25348 /* Sources */,
+				90668DD924CC27C400C25348 /* Frameworks */,
+				90668DDA24CC27C400C25348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jet2TT Social";
+			productName = "Jet2TT Social";
+			productReference = 90668DDC24CC27C500C25348 /* Jet2TT Social.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90668DF124CC27C600C25348 /* Jet2TT SocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90668DFE24CC27C600C25348 /* Build configuration list for PBXNativeTarget "Jet2TT SocialTests" */;
+			buildPhases = (
+				90668DEE24CC27C600C25348 /* Sources */,
+				90668DEF24CC27C600C25348 /* Frameworks */,
+				90668DF024CC27C600C25348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90668DF424CC27C600C25348 /* PBXTargetDependency */,
+			);
+			name = "Jet2TT SocialTests";
+			productName = "Jet2TT SocialTests";
+			productReference = 90668DF224CC27C600C25348 /* Jet2TT SocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90668DD424CC27C400C25348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = svmLogics;
+				TargetAttributes = {
+					90668DDB24CC27C400C25348 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					90668DF124CC27C600C25348 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 90668DDB24CC27C400C25348;
+					};
+				};
+			};
+			buildConfigurationList = 90668DD724CC27C400C25348 /* Build configuration list for PBXProject "Jet2TT Social" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90668DD324CC27C400C25348;
+			productRefGroup = 90668DDD24CC27C500C25348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90668DDB24CC27C400C25348 /* Jet2TT Social */,
+				90668DF124CC27C600C25348 /* Jet2TT SocialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90668DDA24CC27C400C25348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90668DEC24CC27C600C25348 /* LaunchScreen.storyboard in Resources */,
+				90668DE924CC27C600C25348 /* Preview Assets.xcassets in Resources */,
+				90668DE624CC27C600C25348 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90668DF024CC27C600C25348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90668DD824CC27C400C25348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */,
+				90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */,
+				90668DE424CC27C500C25348 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90668DEE24CC27C600C25348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90668DF724CC27C600C25348 /* Jet2TT_SocialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90668DF424CC27C600C25348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90668DDB24CC27C400C25348 /* Jet2TT Social */;
+			targetProxy = 90668DF324CC27C600C25348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90668DEB24CC27C600C25348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90668DF924CC27C600C25348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90668DFA24CC27C600C25348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90668DFC24CC27C600C25348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Jet2TT Social/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Jet2TT Social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.svmLogics.Jet2TT-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90668DFD24CC27C600C25348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Jet2TT Social/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Jet2TT Social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.svmLogics.Jet2TT-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		90668DFF24CC27C600C25348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.svmLogics.Jet2TT-SocialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
+			};
+			name = Debug;
+		};
+		90668E0024CC27C600C25348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.svmLogics.Jet2TT-SocialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90668DD724CC27C400C25348 /* Build configuration list for PBXProject "Jet2TT Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90668DF924CC27C600C25348 /* Debug */,
+				90668DFA24CC27C600C25348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90668DFB24CC27C600C25348 /* Build configuration list for PBXNativeTarget "Jet2TT Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90668DFC24CC27C600C25348 /* Debug */,
+				90668DFD24CC27C600C25348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90668DFE24CC27C600C25348 /* Build configuration list for PBXNativeTarget "Jet2TT SocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90668DFF24CC27C600C25348 /* Debug */,
+				90668E0024CC27C600C25348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90668DD424CC27C400C25348 /* Project object */;
+}
