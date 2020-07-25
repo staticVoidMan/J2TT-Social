@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DDF24CC27C500C25348 /* AppDelegate.swift */; };
 		90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DE124CC27C500C25348 /* SceneDelegate.swift */; };
-		90668DE424CC27C500C25348 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DE324CC27C500C25348 /* ContentView.swift */; };
+		90668DE424CC27C500C25348 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DE324CC27C500C25348 /* HomeView.swift */; };
 		90668DE624CC27C600C25348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE524CC27C600C25348 /* Assets.xcassets */; };
 		90668DE924CC27C600C25348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE824CC27C600C25348 /* Preview Assets.xcassets */; };
 		90668DEC24CC27C600C25348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */; };
 		90668DF724CC27C600C25348 /* Jet2TT_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */; };
+		90668E0424CC37AD00C25348 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E0324CC37AD00C25348 /* UsersListView.swift */; };
+		90668E0624CC392F00C25348 /* BlogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E0524CC392F00C25348 /* BlogsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 		90668DDC24CC27C500C25348 /* Jet2TT Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jet2TT Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90668DDF24CC27C500C25348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90668DE124CC27C500C25348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90668DE324CC27C500C25348 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90668DE324CC27C500C25348 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		90668DE524CC27C600C25348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90668DE824CC27C600C25348 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90668DEB24CC27C600C25348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		90668DF224CC27C600C25348 /* Jet2TT SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jet2TT SocialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TT_SocialTests.swift; sourceTree = "<group>"; };
 		90668DF824CC27C600C25348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90668E0324CC37AD00C25348 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		90668E0524CC392F00C25348 /* BlogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,7 @@
 			children = (
 				90668DDF24CC27C500C25348 /* AppDelegate.swift */,
 				90668DE124CC27C500C25348 /* SceneDelegate.swift */,
-				90668DE324CC27C500C25348 /* ContentView.swift */,
+				90668E0724CC39A500C25348 /* Views */,
 				90668DE524CC27C600C25348 /* Assets.xcassets */,
 				90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */,
 				90668DED24CC27C600C25348 /* Info.plist */,
@@ -105,6 +109,16 @@
 				90668DF824CC27C600C25348 /* Info.plist */,
 			);
 			path = "Jet2TT SocialTests";
+			sourceTree = "<group>";
+		};
+		90668E0724CC39A500C25348 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90668DE324CC27C500C25348 /* HomeView.swift */,
+				90668E0524CC392F00C25348 /* BlogsListView.swift */,
+				90668E0324CC37AD00C25348 /* UsersListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90668E0624CC392F00C25348 /* BlogsListView.swift in Sources */,
 				90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */,
 				90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */,
-				90668DE424CC27C500C25348 /* ContentView.swift in Sources */,
+				90668DE424CC27C500C25348 /* HomeView.swift in Sources */,
+				90668E0424CC37AD00C25348 /* UsersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

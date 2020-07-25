@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UsersListView.swift
 //  Jet2TT Social
 //
 //  Created by Amin Siddiqui on 25/07/20.
@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UsersListView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            Text("Users")
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UserListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UsersListView()
     }
 }
