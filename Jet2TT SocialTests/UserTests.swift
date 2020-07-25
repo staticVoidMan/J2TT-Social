@@ -15,10 +15,22 @@ class UserTests: XCTestCase {
         let provider = UsersProvider_DummyFailure()
         provider.getUsers { (result) in
             switch result {
-            case .success(let users):
+            case .success(_):
                 XCTAssert(false, "Test is designed to fail")
-            case .failure(let error):
+            case .failure(_):
                 XCTAssert(true, "Provider can fail")
+            }
+        }
+    }
+    
+    func testUsersProviderCanPass() {
+        let provider = UsersProvider_DummyPass()
+        provider.getUsers { (result) in
+            switch result {
+            case .success(_):
+                XCTAssert(true, "Provider can succeed")
+            case .failure(_):
+                XCTAssert(false, "Test is designed to fail")
             }
         }
     }
