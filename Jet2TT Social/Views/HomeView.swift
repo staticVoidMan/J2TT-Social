@@ -14,7 +14,7 @@ struct HomeView: View {
             TabView {
                 BlogsListView()
                     .tabItem { Image(systemName: "circle") }
-                UsersListView()
+                UsersListView(viewModel: UsersListViewModel(provider: UsersProvider_DummyPass()))
                     .tabItem { Image(systemName: "triangle") }
             }
         }
