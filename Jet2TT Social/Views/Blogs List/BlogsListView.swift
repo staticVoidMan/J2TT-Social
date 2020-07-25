@@ -14,9 +14,15 @@ struct BlogsListView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.blogs) { (blog) in
-                BlogCellView(viewModel: .init(blog: blog))
-                    .padding([.top, .bottom], 8)
+            List {
+                ForEach(0..<viewModel.blogs.count, id: \.self) { (index) in
+                    BlogCellView(viewModel: .init(blog: self.viewModel.blogs[index]))
+                        .padding([.top, .bottom], 8)
+                        .onAppear { self.viewModel.loadedBlog(at: index) }
+                }
+                if viewModel.isLoadingMore {
+                    Text("Loading...")
+                }
             }
             .navigationBarTitle("Articles")
         }

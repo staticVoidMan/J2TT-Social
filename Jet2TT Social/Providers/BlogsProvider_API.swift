@@ -9,8 +9,8 @@
 import Foundation
 
 class BlogsProvider_API: BlogsProvider {
-    func getBlogs(completion: @escaping BlogsProviderCompletionHandler) {
-        guard let url = URL(string: "https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/blogs")
+    func getBlogs(pagination: Pagination, completion: @escaping BlogsProviderCompletionHandler) {
+        guard let url = URL(string: "https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/blogs?page=\(pagination.offset)&limit=\(pagination.limit)")
             else { completion(.failure(SimpleErrorMessage(message: "Invalid URL"))); return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in

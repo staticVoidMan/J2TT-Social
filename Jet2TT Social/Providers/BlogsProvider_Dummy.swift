@@ -7,7 +7,7 @@
 //
 
 struct BlogsProvider_DummyPass: BlogsProvider {
-    func getBlogs(completion: @escaping BlogsProviderCompletionHandler) {
+    func getBlogs(pagination: Pagination, completion: @escaping BlogsProviderCompletionHandler) {
         let blogs = [Blog.dummyBlogWithMedia, Blog.dummyBlogWithoutMedia]
         completion(.success(blogs))
     }

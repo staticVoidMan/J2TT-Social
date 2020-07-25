@@ -10,5 +10,5 @@ typealias BlogsProviderResult = Result<[Blog],SimpleErrorMessage>
 typealias BlogsProviderCompletionHandler = (BlogsProviderResult) -> Void
 
 protocol BlogsProvider {
-    func getBlogs(completion: @escaping BlogsProviderCompletionHandler)
+    func getBlogs(pagination: Pagination, completion: @escaping BlogsProviderCompletionHandler)
 }

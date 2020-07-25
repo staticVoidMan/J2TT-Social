@@ -6,4 +6,7 @@
 //  Copyright © 2020 svmLogics. All rights reserved.
 //
 
-import Foundation
+struct Pagination {
+    var offset: Int = 1
+    var limit: Int = 10
+}
