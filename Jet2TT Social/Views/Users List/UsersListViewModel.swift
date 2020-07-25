@@ -13,7 +13,7 @@ class UsersListViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var error: String?
     
-    let provider: UsersProvider
+    private let provider: UsersProvider
     
     init(provider: UsersProvider) {
         self.provider = provider

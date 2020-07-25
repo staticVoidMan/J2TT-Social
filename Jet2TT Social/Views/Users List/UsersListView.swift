@@ -18,7 +18,7 @@ struct UsersListView: View {
                 ZStack {
                     UserCellView(viewModel: .init(user: user))
                     
-                    NavigationLink(destination: Text(user.name)) {
+                    NavigationLink(destination: UserProfileView(viewModel: .init(user: user))) {
                         EmptyView()
                     }
                     .buttonStyle(PlainButtonStyle())
@@ -31,6 +31,6 @@ struct UsersListView: View {
 
 struct UserListView_Previews: PreviewProvider {
     static var previews: some View {
-        UsersListView(viewModel: UsersListViewModel(provider: UsersProvider_DummyPass()))
+        UsersListView(viewModel: .init(provider: UsersProvider_DummyPass()))
     }
 }

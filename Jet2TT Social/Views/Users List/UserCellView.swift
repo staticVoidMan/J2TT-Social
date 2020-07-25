@@ -44,12 +44,8 @@ struct UserCellView: View {
 }
 
 struct UserCellView_Previews: PreviewProvider {
-    static var viewModel: UserCellViewModel {
-        return UserCellViewModel(user: User.dummyUser1)
-    }
-    
     static var previews: some View {
-        UserCellView(viewModel: viewModel)
+        UserCellView(viewModel: .init(user: User.dummyUser1))
             .previewLayout(.fixed(width: 360, height: 52))
             .padding()
     }

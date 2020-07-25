@@ -24,23 +24,13 @@ import Foundation
 struct User {
     let id: String
     let name: String
-    let avatar: URL?
+    let avatar: URL
     let designation: String
     let city: String
     let about: String
 }
 
-extension User: Decodable {
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case avatar
-        case designation
-        case city
-        case about
-    }
-}
-
+extension User: Decodable {}
 extension User: Identifiable {}
 
 extension User {

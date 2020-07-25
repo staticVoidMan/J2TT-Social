@@ -9,12 +9,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    let usersListViewModel: UsersListViewModel
+    
     var body: some View {
         VStack {
             TabView {
                 BlogsListView()
                     .tabItem { Image(systemName: "circle") }
-                UsersListView(viewModel: UsersListViewModel(provider: UsersProvider_DummyPass()))
+                
+                UsersListView(viewModel: usersListViewModel)
                     .tabItem { Image(systemName: "triangle") }
             }
         }
@@ -23,6 +26,6 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(usersListViewModel: .init(provider: UsersProvider_DummyPass()))
     }
 }
