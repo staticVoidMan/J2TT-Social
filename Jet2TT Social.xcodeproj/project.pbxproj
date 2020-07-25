@@ -13,9 +13,17 @@
 		90668DE624CC27C600C25348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE524CC27C600C25348 /* Assets.xcassets */; };
 		90668DE924CC27C600C25348 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90668DE824CC27C600C25348 /* Preview Assets.xcassets */; };
 		90668DEC24CC27C600C25348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */; };
-		90668DF724CC27C600C25348 /* Jet2TT_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */; };
 		90668E0424CC37AD00C25348 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E0324CC37AD00C25348 /* UsersListView.swift */; };
 		90668E0624CC392F00C25348 /* BlogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E0524CC392F00C25348 /* BlogsListView.swift */; };
+		90668E6824CC3DEF00C25348 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6724CC3DEF00C25348 /* UserTests.swift */; };
+		90668E6B24CC3EE900C25348 /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6A24CC3EE900C25348 /* UsersProvider.swift */; };
+		90668E6E24CC3F5F00C25348 /* SimpleErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */; };
+		90668E7024CC3F7500C25348 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6F24CC3F7500C25348 /* User.swift */; };
+		90668E7624CC3FE800C25348 /* UsersProvider_DummyFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E7524CC3FE800C25348 /* UsersProvider_DummyFailure.swift */; };
+		90668E7724CC426600C25348 /* UsersProvider_DummyFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E7524CC3FE800C25348 /* UsersProvider_DummyFailure.swift */; };
+		90668E7824CC428800C25348 /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6A24CC3EE900C25348 /* UsersProvider.swift */; };
+		90668E7924CC428B00C25348 /* SimpleErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */; };
+		90668E7A24CC428D00C25348 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6F24CC3F7500C25348 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +46,14 @@
 		90668DEB24CC27C600C25348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90668DED24CC27C600C25348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90668DF224CC27C600C25348 /* Jet2TT SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jet2TT SocialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TT_SocialTests.swift; sourceTree = "<group>"; };
 		90668DF824CC27C600C25348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90668E0324CC37AD00C25348 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		90668E0524CC392F00C25348 /* BlogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsListView.swift; sourceTree = "<group>"; };
+		90668E6724CC3DEF00C25348 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		90668E6A24CC3EE900C25348 /* UsersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider.swift; sourceTree = "<group>"; };
+		90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorMessage.swift; sourceTree = "<group>"; };
+		90668E6F24CC3F7500C25348 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90668E7524CC3FE800C25348 /* UsersProvider_DummyFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider_DummyFailure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,9 @@
 				90668DDF24CC27C500C25348 /* AppDelegate.swift */,
 				90668DE124CC27C500C25348 /* SceneDelegate.swift */,
 				90668E0724CC39A500C25348 /* Views */,
+				90668E6924CC3ED800C25348 /* Protocols */,
+				90668E7424CC3FD100C25348 /* Providers */,
+				90668E6C24CC3F5200C25348 /* Models */,
 				90668DE524CC27C600C25348 /* Assets.xcassets */,
 				90668DEA24CC27C600C25348 /* LaunchScreen.storyboard */,
 				90668DED24CC27C600C25348 /* Info.plist */,
@@ -105,7 +120,7 @@
 		90668DF524CC27C600C25348 /* Jet2TT SocialTests */ = {
 			isa = PBXGroup;
 			children = (
-				90668DF624CC27C600C25348 /* Jet2TT_SocialTests.swift */,
+				90668E6724CC3DEF00C25348 /* UserTests.swift */,
 				90668DF824CC27C600C25348 /* Info.plist */,
 			);
 			path = "Jet2TT SocialTests";
@@ -119,6 +134,31 @@
 				90668E0324CC37AD00C25348 /* UsersListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		90668E6924CC3ED800C25348 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				90668E6A24CC3EE900C25348 /* UsersProvider.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		90668E6C24CC3F5200C25348 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */,
+				90668E6F24CC3F7500C25348 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90668E7424CC3FD100C25348 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				90668E7524CC3FE800C25348 /* UsersProvider_DummyFailure.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +214,6 @@
 					};
 					90668DF124CC27C600C25348 = {
 						CreatedOnToolsVersion = 11.5;
-						TestTargetID = 90668DDB24CC27C400C25348;
 					};
 				};
 			};
@@ -222,11 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90668E6E24CC3F5F00C25348 /* SimpleErrorMessage.swift in Sources */,
 				90668E0624CC392F00C25348 /* BlogsListView.swift in Sources */,
+				90668E7624CC3FE800C25348 /* UsersProvider_DummyFailure.swift in Sources */,
 				90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */,
 				90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */,
+				90668E7024CC3F7500C25348 /* User.swift in Sources */,
 				90668DE424CC27C500C25348 /* HomeView.swift in Sources */,
 				90668E0424CC37AD00C25348 /* UsersListView.swift in Sources */,
+				90668E6B24CC3EE900C25348 /* UsersProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90668DF724CC27C600C25348 /* Jet2TT_SocialTests.swift in Sources */,
+				90668E7924CC428B00C25348 /* SimpleErrorMessage.swift in Sources */,
+				90668E7724CC426600C25348 /* UsersProvider_DummyFailure.swift in Sources */,
+				90668E6824CC3DEF00C25348 /* UserTests.swift in Sources */,
+				90668E7A24CC428D00C25348 /* User.swift in Sources */,
+				90668E7824CC428800C25348 /* UsersProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Jet2TT Social/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Jet2TT Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Jet2TT Social/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Jet2TT Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,8 +465,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -429,7 +478,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
 			};
 			name = Debug;
 		};
@@ -437,8 +485,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,7 +498,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
 			};
 			name = Release;
 		};
