@@ -10,11 +10,12 @@ import SwiftUI
 
 struct HomeView: View {
     let usersListViewModel: UsersListViewModel
+    let blogsListViewModel: BlogsListViewModel
     
     var body: some View {
         VStack {
             TabView {
-                BlogsListView()
+                BlogsListView(viewModel: blogsListViewModel)
                     .tabItem { Image(systemName: "circle") }
                 
                 UsersListView(viewModel: usersListViewModel)
@@ -25,7 +26,17 @@ struct HomeView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static var usersListViewModel: UsersListViewModel {
+        let provider: UsersProvider = UsersProvider_DummyPass()
+        return .init(provider: provider)
+    }
+    static var blogsListViewModel: BlogsListViewModel {
+        let provider: BlogsProvider = BlogsProvider_DummyPass()
+        return .init(provider: provider)
+    }
+    
     static var previews: some View {
-        HomeView(usersListViewModel: .init(provider: UsersProvider_DummyPass()))
+        HomeView(usersListViewModel: usersListViewModel,
+                 blogsListViewModel: blogsListViewModel)
     }
 }

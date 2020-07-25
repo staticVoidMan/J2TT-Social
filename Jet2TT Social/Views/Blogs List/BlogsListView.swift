@@ -9,15 +9,22 @@
 import SwiftUI
 
 struct BlogsListView: View {
+    
+    @ObservedObject var viewModel: BlogsListViewModel
+    
     var body: some View {
         NavigationView {
-            Text("Blogs")
+            List(viewModel.blogs) { (blog) in
+                BlogCellView(viewModel: .init(blog: blog))
+                    .padding([.top, .bottom], 8)
+            }
+            .navigationBarTitle("Articles")
         }
     }
 }
 
 struct BlogsListView_Previews: PreviewProvider {
     static var previews: some View {
-        BlogsListView()
+        BlogsListView(viewModel: .init(provider: BlogsProvider_DummyPass()))
     }
 }
