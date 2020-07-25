@@ -15,7 +15,8 @@ class UsersProvider_DummyFailure: UsersProvider {
 
 class UsersProvider_DummyPass: UsersProvider {
     func getUsers(completion: @escaping UsersProviderCompletionHandler) {
-        let result: UsersProviderResult = .success([])
+        let users = [User.dummyUser1, User.dummyUser2]
+        let result: UsersProviderResult = .success(users)
         completion(result)
     }
 }
