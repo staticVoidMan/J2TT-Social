@@ -16,7 +16,7 @@ struct UsersListView: View {
         NavigationView {
             List(viewModel.users) { (user) in
                 ZStack {
-                    UserCellView(viewModel: .init(user: user))
+                    UserListCellView(viewModel: .init(user: user))
                     
                     NavigationLink(destination: UserProfileView(viewModel: .init(user: user))) {
                         EmptyView()

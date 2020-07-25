@@ -1,5 +1,5 @@
 //
-//  UserCellView.swift
+//  UserListCellView.swift
 //  Jet2TT Social
 //
 //  Created by Amin Siddiqui on 25/07/20.
@@ -8,12 +8,18 @@
 
 import SwiftUI
 
-struct UserCellView: View {
-    let viewModel: UserCellViewModel
+struct UserListCellView: View {
+    @ObservedObject var viewModel: UserViewModel
     
     var body: some View {
         HStack {
-            Image(systemName: "person.crop.circle")
+            Image(uiImage: {
+                if let data = self.viewModel.imageData, let image = UIImage(data: data) {
+                    return image
+                } else {
+                    return UIImage(systemName: "person.crop.circle")!
+                }
+            }())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 44)
@@ -45,7 +51,7 @@ struct UserCellView: View {
 
 struct UserCellView_Previews: PreviewProvider {
     static var previews: some View {
-        UserCellView(viewModel: .init(user: User.dummyUser1))
+        UserListCellView(viewModel: .init(user: User.dummyUser1))
             .previewLayout(.fixed(width: 360, height: 52))
             .padding()
     }

@@ -22,11 +22,13 @@ class UsersListViewModel: ObservableObject {
     
     func refresh() {
         self.provider.getUsers { (result) in
-            switch result {
-            case .success(let response):
-                self.users = response
-            case .failure(let error):
-                self.error = error.message
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let response):
+                    self.users = response
+                case .failure(let error):
+                    self.error = error.message
+                }
             }
         }
     }

@@ -10,11 +10,17 @@ import SwiftUI
 
 struct UserProfileView: View {
     
-    let viewModel: UserProfileViewModel
+    @ObservedObject var viewModel: UserViewModel
     
     var body: some View {
         VStack {
-            Image(systemName: "person.crop.circle")
+            Image(uiImage: {
+                if let data = self.viewModel.imageData, let image = UIImage(data: data) {
+                    return image
+                } else {
+                    return UIImage(systemName: "person.crop.circle")!
+                }
+            }())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 240)
