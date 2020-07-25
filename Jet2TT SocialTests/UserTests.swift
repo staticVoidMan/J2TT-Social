@@ -34,5 +34,25 @@ class UserTests: XCTestCase {
             }
         }
     }
+    
+    func testCanGetUsersFromAPI() {
+        let signal = expectation(description: "API success")
+        
+        let provider = UsersProvider_API()
+        provider.getUsers { (result) in
+            switch result {
+            case .success:
+                XCTAssert(true)
+            case .failure:
+                XCTAssert(false, "Test is designed to pass")
+            }
+            
+            signal.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5) { (error) in
+            print(error)
+        }
+    }
 
 }

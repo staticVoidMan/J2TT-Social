@@ -24,6 +24,7 @@
 		90668E7824CC428800C25348 /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6A24CC3EE900C25348 /* UsersProvider.swift */; };
 		90668E7924CC428B00C25348 /* SimpleErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */; };
 		90668E7A24CC428D00C25348 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E6F24CC3F7500C25348 /* User.swift */; };
+		90668E7C24CC44CE00C25348 /* UsersProvider_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90668E7B24CC44CE00C25348 /* UsersProvider_API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		90668E6D24CC3F5F00C25348 /* SimpleErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleErrorMessage.swift; sourceTree = "<group>"; };
 		90668E6F24CC3F7500C25348 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90668E7524CC3FE800C25348 /* UsersProvider_Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider_Dummy.swift; sourceTree = "<group>"; };
+		90668E7B24CC44CE00C25348 /* UsersProvider_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider_API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				90668E7524CC3FE800C25348 /* UsersProvider_Dummy.swift */,
+				90668E7B24CC44CE00C25348 /* UsersProvider_API.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 					};
 					90668DF124CC27C600C25348 = {
 						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 90668DDB24CC27C400C25348;
 					};
 				};
 			};
@@ -263,6 +267,7 @@
 			files = (
 				90668E6E24CC3F5F00C25348 /* SimpleErrorMessage.swift in Sources */,
 				90668E0624CC392F00C25348 /* BlogsListView.swift in Sources */,
+				90668E7C24CC44CE00C25348 /* UsersProvider_API.swift in Sources */,
 				90668E7624CC3FE800C25348 /* UsersProvider_Dummy.swift in Sources */,
 				90668DE024CC27C500C25348 /* AppDelegate.swift in Sources */,
 				90668DE224CC27C500C25348 /* SceneDelegate.swift in Sources */,
@@ -465,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
@@ -478,6 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
 			};
 			name = Debug;
 		};
@@ -485,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jet2TT SocialTests/Info.plist";
@@ -498,6 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TT Social.app/Jet2TT Social";
 			};
 			name = Release;
 		};
