@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDBlog" representedClassName="CDBlog" syncable="YES" codeGenerationType="class">
+        <attribute name="comments" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="likes" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="media" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDMedia"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser"/>
+    </entity>
+    <entity name="CDMedia" representedClassName="CDMedia" syncable="YES" codeGenerationType="class">
+        <attribute name="article" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="image" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="CDUser" representedClassName="CDUser" syncable="YES" codeGenerationType="class">
+        <attribute name="about" attributeType="String"/>
+        <attribute name="avatar" attributeType="String"/>
+        <attribute name="city" attributeType="String"/>
+        <attribute name="designation" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDBlog" positionX="104.4765625" positionY="137.2734375" width="128" height="148"/>
+        <element name="CDMedia" positionX="281.58984375" positionY="139.6953125" width="128" height="103"/>
+        <element name="CDUser" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>

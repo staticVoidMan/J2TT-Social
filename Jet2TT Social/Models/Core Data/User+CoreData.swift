@@ -7,7 +7,6 @@
 //
 
 import CoreData
-
 extension User {
     init(from core: CDUser) {
         self.id = core.id!
@@ -18,7 +17,8 @@ extension User {
         self.about = core.about!
     }
     
-    func save(to context: NSManagedObjectContext) {
+    @discardableResult
+    func save(to context: NSManagedObjectContext) -> CDUser {
         let core: CDUser = {
             let request: NSFetchRequest<CDUser> = {
                 let request = NSFetchRequest<CDUser>(entityName: "CDUser")
@@ -48,6 +48,7 @@ extension User {
         core.city = self.city
         core.about = self.about
         core.avatar = self.avatar.absoluteString
+        
+        return core
     }
 }
-

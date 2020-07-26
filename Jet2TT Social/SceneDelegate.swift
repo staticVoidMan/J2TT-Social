@@ -13,11 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    var usersListViewModel = UsersListViewModel(provider: Providers.usersProvider)
-    var blogsListViewModel: BlogsListViewModel {
-        let provider: BlogsProvider = BlogsProvider_API()
-        return .init(provider: provider)
-    }
+    let usersListViewModel = UsersListViewModel(provider: Providers.usersProvider)
+    let blogsListViewModel = BlogsListViewModel(provider: Providers.blogsProvider)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

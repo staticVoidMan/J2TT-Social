@@ -1,46 +1,54 @@
 //
-//  UsersProvider_Local.swift
+//  BlogsProvider_Local.swift
 //  Jet2TT Social
 //
-//  Created by Amin Siddiqui on 26/07/20.
+//  Created by Amin Siddiqui on 25/07/20.
 //  Copyright © 2020 svmLogics. All rights reserved.
 //
 
 import CoreData
 
-class UsersProvider_Local: UsersProvider {
+class BlogsProvider_Local: BlogsProvider {
     
     private let context: NSManagedObjectContext
-    private var provider: UsersProvider?
+    private var provider: BlogsProvider?
     
     init(context: NSManagedObjectContext) {
         self.context = context
     }
     
     @discardableResult
-    func fallback(provider: UsersProvider) -> Self {
+    func fallback(provider: BlogsProvider) -> Self {
         self.provider = provider
         return self
     }
     
-    func getUsers(completion: @escaping UsersProviderCompletionHandler) {
-        if let users = tryLocalStore() {
-            completion(.success(users))
+    func getBlogs(pagination: Pagination, completion: @escaping BlogsProviderCompletionHandler) {
+        if let models = tryLocalStore(pagination: pagination) {
+            completion(.success(models))
         } else {
-            tryFallbackProvider(completion: completion)
+            tryFallbackProvider(pagination: pagination, completion: completion)
         }
     }
     
-    func tryLocalStore() -> [User]? {
-        let request: NSFetchRequest<CDUser> = {
-            let request = NSFetchRequest<CDUser>(entityName: "CDUser")
-            let sortKey = #keyPath(CDUser.id)
+    func tryLocalStore(pagination: Pagination) -> [Blog]? {
+        let request: NSFetchRequest<CDBlog> = {
+            let request = NSFetchRequest<CDBlog>(entityName: "CDBlog")
+
+            let sortKey = #keyPath(CDBlog.id)
             request.sortDescriptors = [NSSortDescriptor(key: sortKey, ascending: true)]
+            
+            request.fetchOffset = (pagination.offset - 1) * pagination.limit
+            request.fetchLimit = pagination.limit
+            
             return request
         }()
         
         do {
-            let resultsMatched = try self.context.fetch(request).map(User.init(from:))
+            let resultsMatched = try self.context
+                .fetch(request)
+                .map(Blog.init(from:))
+            
             if resultsMatched.isEmpty == false {
                 return resultsMatched
             } else {
@@ -52,13 +60,13 @@ class UsersProvider_Local: UsersProvider {
         }
     }
     
-    func tryFallbackProvider(completion: @escaping UsersProviderCompletionHandler) {
+    func tryFallbackProvider(pagination: Pagination, completion: @escaping BlogsProviderCompletionHandler) {
         if let provider = provider {
-            provider.getUsers { (result) in
+            provider.getBlogs(pagination: pagination) { (result) in
                 do {
-                    let users = try result.get()
-                    users.forEach { (user) in
-                        user.save(to: self.context)
+                    let models = try result.get()
+                    models.forEach { (model) in
+                        model.save(to: self.context)
                     }
                     
                     DispatchQueue.main.async {

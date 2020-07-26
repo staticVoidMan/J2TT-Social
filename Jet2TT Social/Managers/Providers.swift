@@ -15,7 +15,11 @@ enum Providers {
     }
     
     static var usersProvider: UsersProvider {
-        return UsersProvider_Local(context: context)
-            .fallback(provider: UsersProvider_API())
+        return UsersProvider_API()
+    }
+    
+    static var blogsProvider: BlogsProvider {
+        return BlogsProvider_Local(context: context)
+            .fallback(provider: BlogsProvider_API())
     }
 }
