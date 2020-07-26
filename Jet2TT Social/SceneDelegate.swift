@@ -13,10 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    var usersListViewModel: UsersListViewModel {
-        let provider: UsersProvider = UsersProvider_API()
-        return .init(provider: provider)
-    }
+    var usersListViewModel = UsersListViewModel(provider: Providers.usersProvider)
     var blogsListViewModel: BlogsListViewModel {
         let provider: BlogsProvider = BlogsProvider_API()
         return .init(provider: provider)
