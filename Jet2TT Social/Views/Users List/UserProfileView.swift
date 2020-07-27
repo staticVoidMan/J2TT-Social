@@ -25,7 +25,9 @@ struct UserProfileView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 240)
                 .background(Color.gray.opacity(0.3))
-                .cornerRadius(120)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                
             
             Text(viewModel.name)
                 .font(.title)

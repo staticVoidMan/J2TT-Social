@@ -36,6 +36,7 @@ struct BlogCellView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 160)
                     .clipped()
+                    .cornerRadius(5)
             }
             
             Text(viewModel.postContent)
