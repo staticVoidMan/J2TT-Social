@@ -1,5 +1,5 @@
 //
-//  UserTests.swift
+//  TestCases.swift
 //  Jet2TT SocialTests
 //
 //  Created by Amin Siddiqui on 25/07/20.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Jet2TT_Social
 
-class UserTests: XCTestCase {
+class TestCases: XCTestCase {
     
     func testUsersProviderCanFail() {
         let provider = UsersProvider_DummyFailure()
@@ -40,6 +40,26 @@ class UserTests: XCTestCase {
         
         let provider = UsersProvider_API()
         provider.getUsers { (result) in
+            switch result {
+            case .success:
+                XCTAssert(true)
+            case .failure:
+                XCTAssert(false, "Test is designed to pass")
+            }
+            
+            signal.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5) { (error) in
+            print(error)
+        }
+    }
+    
+    func testCanGetBlogsFromAPI() {
+        let signal = expectation(description: "API success")
+        
+        let provider = BlogsProvider_API()
+        provider.getBlogs(pagination: Pagination()) { (result) in
             switch result {
             case .success:
                 XCTAssert(true)
