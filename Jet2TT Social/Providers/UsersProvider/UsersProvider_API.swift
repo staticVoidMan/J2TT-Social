@@ -13,23 +13,13 @@ class UsersProvider_API: UsersProvider {
         guard let url = URL(string: "https://5e99a9b1bc561b0016af3540.mockapi.io/jet2/api/v1/users")
             else { completion(.failure(SimpleErrorMessage(message: "Invalid URL"))); return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
+        APIResource<[User]>(url: url).request { (result) in
+            switch result {
+            case .success(let response):
+                completion(.success(response))
+            case .failure(let error):
                 completion(.failure(SimpleErrorMessage(message: error.localizedDescription)))
-                return
-            }
-            
-            if let data = data {
-                do {
-                    let users = try JSONDecoder().decode([User].self, from: data)
-                    completion(.success(users))
-                } catch {
-                    completion(.failure(SimpleErrorMessage(message: error.localizedDescription)))
-                }
-            } else {
-                completion(.failure(SimpleErrorMessage(message: "Data unavailable")))
             }
         }
-        .resume()
     }
 }
